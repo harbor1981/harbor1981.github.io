@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Researcher | Personal Homepage</title>
+  <meta name="description" content="Personal academic homepage: publications, standards, projects, and contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="profile">
+        <img class="avatar" src="assets/profile.jpg" alt="Profile photo">
+        <div class="id-block">
+          <h1 class="name">Your Name, Ph.D.</h1>
+          <p class="title">Research Scientist</p>
+          <p class="affiliation">Department / Lab, Institution / University</p>
+          <p class="contact"><a href="mailto:you@example.com">you@example.com</a></p>
+        </div>
+      </div>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#standards">Standards</a>
+        <a href="#projects">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>
+        I am a researcher focusing on [your fields, e.g., machine learning, computer vision, and scientific computing].
+        My work explores [one-line research theme]. I collaborate with academia and industry to translate research into practice.
+      </p>
+      <ul class="meta">
+        <li><strong>Interests:</strong> Topic A, Topic B, Topic C</li>
+        <li><strong>Location:</strong> City, Country</li>
+      </ul>
+    </section>
+
+    <section id="publications" class="card">
+      <h2>Selected Publications</h2>
+      <ol class="pub-list">
+        <li>
+          <span class="pub-title">Paper Title One</span>
+          <span class="pub-authors">Your Name, Coauthor</span>
+          <span class="pub-venue">Conference/Journal, 2024</span>
+          <span class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">Code</a>
+            <a href="#">DOI</a>
+          </span>
+        </li>
+        <li>
+          <span class="pub-title">Paper Title Two</span>
+          <span class="pub-authors">Your Name, Coauthor</span>
+          <span class="pub-venue">Conference/Journal, 2023</span>
+          <span class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">Code</a>
+            <a href="#">DOI</a>
+          </span>
+        </li>
+      </ol>
+    </section>
+
+    <section id="standards" class="card">
+      <h2>Standards</h2>
+      <ul class="item-list">
+        <li>
+          <span class="item-title">Standard Title / Contribution</span>
+          <span class="item-meta">Organization, Working Group, Year</span>
+          <a class="item-link" href="#">Link</a>
+        </li>
+        <li>
+          <span class="item-title">Standard Title / Contribution</span>
+          <span class="item-meta">Organization, Working Group, Year</span>
+          <a class="item-link" href="#">Link</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul class="item-list">
+        <li>
+          <span class="item-title">Project Name</span>
+          <span class="item-meta">Role: PI/Co-PI/Member · 2022–2025</span>
+          <p class="item-desc">One-sentence description highlighting objectives and outcomes.</p>
+          <a class="item-link" href="#">More</a>
+        </li>
+        <li>
+          <span class="item-title">Project Name</span>
+          <span class="item-meta">Role: PI/Co-PI/Member · 2021–2023</span>
+          <p class="item-desc">One-sentence description highlighting objectives and outcomes.</p>
+          <a class="item-link" href="#">More</a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
